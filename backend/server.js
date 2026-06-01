@@ -13,7 +13,7 @@ const app = express();
 const port = 4000;
 
 const allowedOrigins = [
-    "http://localhost:5173",
+    "https://medicare-frontend-sync.onrender.com",
     "https://medicare-admin-n1br.onrender.com",
 ];
 
