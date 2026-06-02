@@ -276,7 +276,7 @@ const ContactPage = () => {
                     </div>
 
                     <iframe
-                        src="https://www.google.com/maps/place/Rajmahal+Rd,+Tikamgarh,+Madhya+Pradesh+472001/@24.7447365,78.8287655,17z/data=!3m1!4b1!4m6!3m5!1s0x39784f67fa4b6021:0xc95f3a6d6937c1e5!8m2!3d24.7447365!4d78.8287655!16s%2Fg%2F11v6kd9lrt!18m1!1e1?entry=ttu&g_ep=EgoyMDI2MDUyNy4wIKXMDSoASAFQAw%3D%3D"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3623.4797069273404!2d78.8287655!3d24.744736500000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39784f67fa4b6021%3A0xc95f3a6d6937c1e5!2sRajmahal%20Rd%2C%20Tikamgarh%2C%20Madhya%20Pradesh%20472001!5e0!3m2!1sen!2sin!4v1780396792124!5m2!1sen!2sin"
                         className={contactPageStyles.map}
                         title="Rajmahal Road Map"
                         loading="lazy"
