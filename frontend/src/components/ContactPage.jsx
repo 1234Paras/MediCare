@@ -276,9 +276,9 @@ const ContactPage = () => {
                     </div>
 
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.460792853461!2d80.98709187529213!3d26.870382662861033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399be2ae3cea2421%3A0x6c0de12e8a77818f!2sGomti%20Nagar%2C%20Lucknow%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1731769000000!5m2!1sen!2sin"
+                        src="https://www.google.com/maps/place/Rajmahal+Rd,+Tikamgarh,+Madhya+Pradesh+472001/@24.7447365,78.8287655,17z/data=!3m1!4b1!4m6!3m5!1s0x39784f67fa4b6021:0xc95f3a6d6937c1e5!8m2!3d24.7447365!4d78.8287655!16s%2Fg%2F11v6kd9lrt!18m1!1e1?entry=ttu&g_ep=EgoyMDI2MDUyNy4wIKXMDSoASAFQAw%3D%3D"
                         className={contactPageStyles.map}
-                        title="Gomti Nagar Map"
+                        title="Rajmahal Road Map"
                         loading="lazy"
                         allowFullScreen
                     ></iframe>
