@@ -203,7 +203,7 @@ STRIPE_SECRET_KEY=your_stripe_secret_key
 ```bash
 git clone https://github.com/your-username/medicare-plus.git
 
-cd medicare-plus
+cd medicare
 ```
 
 ### Install Dependencies
