@@ -1,217 +1,359 @@
-# Medicare+ Hospital Management System
+# 🏥 Medicare+ Hospital Management System
 
-## 🏥 Overview
+A modern **Hospital Management System** built using the **MERN Stack** that enables patients to book appointments, browse healthcare services, make secure payments, and manage their healthcare experience online. The platform also provides dedicated dashboards for **Doctors** and **Administrators** to efficiently manage hospital operations.
 
-Medicare+ Hospital Management System is a comprehensive web-based application designed to streamline hospital operations and improve healthcare management. The system enables efficient management of patients, doctors, appointments, medical records, billing, and hospital services through a centralized platform.
+---
 
-The primary goal of this project is to digitize hospital workflows, reduce manual paperwork, improve data accuracy, and enhance patient care.
+## 📸 Project Overview
+
+### 👤 Patient Portal
+- Browse doctors and healthcare services
+- Book appointments online
+- Secure authentication using Clerk
+- Manage profile and appointments
+- Make secure payments through Stripe
+
+### 🛠️ Admin Dashboard
+- Manage doctors
+- Manage healthcare services
+- View appointments
+- Manage service appointments
+- Hospital administration panel
+
+### 👨‍⚕️ Doctor Dashboard
+- View appointments
+- Manage profile
+- Monitor patient interactions
 
 ---
 
 ## 🚀 Features
 
-### 👨‍⚕️ Doctor Management
-- Add, update, and delete doctor profiles
-- Manage doctor specialization and availability
-- View doctor schedules
+### 👤 Patient Features
 
-### 🧑‍🤝‍🧑 Patient Management
-- Register new patients
-- Update patient information
-- Maintain patient medical history
-- Search patient records
+- User Authentication with Clerk
+- Browse Doctors
+- View Doctor Profiles
+- Book Appointments
+- Browse Healthcare Services
+- Service Booking
+- Online Payments with Stripe
+- Appointment History
+- Profile Management
+- Responsive User Interface
 
-### 📅 Appointment Management
-- Book appointments online
-- View appointment schedules
-- Cancel or reschedule appointments
-- Track appointment status
+### 👨‍⚕️ Doctor Features
 
-### 🏥 Department Management
-- Manage hospital departments
-- Assign doctors to departments
-- View department-wise doctor information
+- Doctor Dashboard
+- View Appointments
+- Edit Profile
+- Manage Availability
 
-### 💊 Medical Services
-- Blood Pressure Checkup
-- Diabetes Screening
-- Full Body Checkup
-- Cardiology Consultation
-- Neurology Consultation
-- Orthopedic Care
-- Pediatric Care
-- Emergency Services
+### 🛠️ Admin Features
 
-### 💳 Billing System
-- Generate patient bills
-- Track payment status
-- View billing history
-- Calculate treatment charges
-
-### 🔐 User Authentication
-- Secure login system
-- Role-based access control
-- Admin and staff management
-
-### 📊 Dashboard
-- Hospital statistics overview
-- Patient count tracking
-- Doctor count tracking
-- Appointment analytics
+- Dashboard Overview
+- Add Doctors
+- Manage Doctors
+- Add Healthcare Services
+- Manage Services
+- View Appointments
+- Manage Service Appointments
+- Hospital Operations Management
 
 ---
 
-## 🛠️ Technology Stack
+## 🏗️ Tech Stack
 
 ### Frontend
-- HTML5
-- CSS3
-- JavaScript
-- Bootstrap
+- React.js
+- Vite
+- React Router DOM
+- Axios
+- Clerk Authentication
+- CSS3/ tailwind css
 
 ### Backend
-- Java
-- Spring Boot
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+- JWT Authentication
+- Multer
 
-### Database
-- MySQL
-
-### Tools & IDE
-- IntelliJ IDEA / Eclipse
-- MySQL Workbench
-- Git & GitHub
+### Third-Party Services
+- Clerk (Authentication & User Management)
+- Stripe (Payment Gateway)
+- Cloudinary (Image Storage)
+- Render (Deployment)
 
 ---
 
 ## 📂 Project Structure
 
-```text
-MedicarePlus/
+```bash
+MEDICARE/
 │
-├── src/
-│   ├── main/
-│   │   ├── java/
-│   │   ├── resources/
-│   │   └── templates/
+├── admin/
+│   ├── public/
+│   ├── src/
+│   │   ├── assets/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── App.jsx
+│   │   ├── main.jsx
+│   │   └── index.css
+│   │
+│   ├── .env
+│   ├── package.json
+│   └── vite.config.js
 │
-├── database/
-│   └── medicareplus.sql
+├── backend/
+│   ├── config/
+│   ├── controllers/
+│   ├── middlewares/
+│   ├── models/
+│   ├── routes/
+│   ├── utils/
+│   ├── server.js
+│   ├── .env
+│   └── package.json
 │
-├── screenshots/
+├── frontend/
+│   ├── public/
+│   ├── src/
+│   │   ├── assets/
+│   │   ├── components/
+│   │   ├── doctor/
+│   │   ├── pages/
+│   │   ├── App.jsx
+│   │   ├── main.jsx
+│   │   └── index.css
+│   │
+│   ├── .env
+│   ├── package.json
+│   └── vite.config.js
 │
-├── README.md
-│
-└── pom.xml
+└── README.md
+```
+
+---
+
+## 👥 User Roles
+
+### 👤 Patient
+- Sign Up / Login
+- Browse Doctors
+- Book Appointments
+- Browse Services
+- Make Online Payments
+- Manage Profile
+
+### 👨‍⚕️ Doctor
+- Doctor Dashboard
+- View Patient Appointments
+- Edit Profile
+- Manage Availability
+
+### 🛠️ Admin
+- Add Doctors
+- Manage Doctor Records
+- Add Services
+- Manage Services
+- View Appointments
+- Manage Service Appointments
+- Hospital Management
+
+---
+
+## 🔐 Environment Variables
+
+### Frontend (.env)
+
+```env
+VITE_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
+```
+
+### Admin (.env)
+
+```env
+VITE_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
+```
+
+### Backend (.env)
+
+```env
+CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
+
+CLERK_SECRET_KEY=your_clerk_secret_key
+
+CLOUDINARY_API_KEY=your_cloudinary_api_key
+CLOUDINARY_API_SECRET=your_cloudinary_api_secret
+
+JWT_SECRET=your_jwt_secret
+
+STRIPE_SECRET_KEY=your_stripe_secret_key
 ```
 
 ---
 
 ## ⚙️ Installation & Setup
 
-### Prerequisites
-
-- Java JDK 17+
-- MySQL Server
-- Maven
-- IDE (IntelliJ IDEA/Eclipse)
-
-### Steps
-
-1. Clone the repository
+### Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/MedicarePlus.git
+git clone https://github.com/your-username/medicare-plus.git
+
+cd medicare-plus
 ```
 
-2. Navigate to the project directory
+### Install Dependencies
+
+#### Frontend
 
 ```bash
-cd MedicarePlus
+cd frontend
+npm install
 ```
 
-3. Configure MySQL database
-
-Create a database:
-
-```sql
-CREATE DATABASE medicareplus;
-```
-
-4. Update database credentials in:
-
-```properties
-application.properties
-```
-
-```properties
-spring.datasource.url=jdbc:mysql://localhost:3306/medicareplus
-spring.datasource.username=root
-spring.datasource.password=your_password
-```
-
-5. Run the application
+#### Admin
 
 ```bash
-mvn spring-boot:run
+cd admin
+npm install
 ```
 
-6. Open in browser
+#### Backend
 
-```text
-http://localhost:8080
+```bash
+cd backend
+npm install
+```
+
+### Run Development Server
+
+#### Backend
+
+```bash
+npm run server
+```
+
+#### Frontend
+
+```bash
+npm run dev
+```
+
+#### Admin
+
+```bash
+npm run dev
 ```
 
 ---
 
-## 📸 Screenshots
+## ☁️ Cloudinary Integration
 
-### Login Page
-(Add Screenshot Here)
+Cloudinary is used for:
 
-### Dashboard
-(Add Screenshot Here)
+- Doctor Images
+- Service Images
+- Cloud Storage
+- Optimized Image Delivery
+
+---
+
+## 💳 Stripe Payment Integration
+
+Stripe provides:
+
+- Secure Online Payments
+- Appointment Payment Processing
+- Payment Verification
+- Secure Transactions
+
+---
+
+## 🔑 Authentication & Security
+
+### Clerk Authentication
+
+- User Registration
+- User Login
+- Session Management
+- Protected Routes
+
+### JWT Authentication
+
+- API Security
+- Route Protection
+- Secure Token Validation
+
+---
+
+## 📊 Core Modules
 
 ### Patient Management
-(Add Screenshot Here)
+- Registration
+- Login
+- Profile Management
+- Appointment Booking
+
+### Doctor Management
+- Add Doctors
+- Update Doctor Information
+- Appointment Tracking
+
+### Service Management
+- Add Services
+- Update Services
+- Service Booking
 
 ### Appointment Management
-(Add Screenshot Here)
+- Doctor Appointments
+- Service Appointments
+- Appointment Status Tracking
 
-### Billing System
-(Add Screenshot Here)
-
----
-
-## 🎯 Objectives
-
-- Digitize hospital management processes
-- Improve patient record management
-- Reduce paperwork and manual errors
-- Enhance doctor-patient coordination
-- Provide efficient appointment scheduling
-- Improve healthcare service delivery
+### Payment Management
+- Stripe Integration
+- Payment Verification
+- Secure Transactions
 
 ---
 
-## 🔮 Future Enhancements
+## 🌐 Deployment
 
-- Online payment integration
-- Telemedicine support
-- Prescription management
-- Email/SMS notifications
-- AI-powered health recommendations
-- Mobile application support
+### Frontend
+- Render (https://medicare-frontend-sync.onrender.com)
+
+### Admin Panel
+- Render (https://medicare-admin-n1br.onrender.com)
+
+### Backend API
+- Render (https://medicare-backend-qvrv.onrender.com)
 
 ---
 
-## 👨‍💻 Author
+## 🎯 Future Enhancements
+
+- Email Notifications
+- SMS Appointment Alerts
+- Video Consultation
+- Medical Report Upload
+- Patient Medical History
+- Prescription Management
+- Analytics Dashboard
+- Doctor Availability Calendar
+
+---
+
+## 👨‍💻 Developer
 
 **Paras Jain**
 
-Hospital Management System Project
+### Medicare+ Hospital Management System
+
+Built with ❤️ using MERN Stack, Clerk, Stripe, Cloudinary, JWT, Multer, MongoDB, and Render.
 
 ---
 
-## 📄 License
-
-This project is developed for educational and learning purposes.
+⭐ If you found this project helpful, please consider giving it a star on GitHub!
